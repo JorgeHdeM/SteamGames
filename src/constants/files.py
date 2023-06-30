@@ -1,0 +1,2 @@
+class ConstantsFiles:
+    csv = "csv"
