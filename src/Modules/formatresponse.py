@@ -1,24 +1,25 @@
 import pandas as pd
 import logging
+from constants.columns import ColumnsGames
 
 class FormatResponse:
     def __init__(self):
-        logging.info("\n########## Formatting information ##########")
+        pass
 
     def format_response(self, data):
-        response = data["response"]
-        games_total = response["games"]
+        columns = ColumnsGames()
+        response = data[columns.STEAM_RESPONSE]
+        games_total = response[columns.STEAM_GAMES]
 
         games_name = []
         games_time = []
         for game in games_total:
-            games_name.append(game["name"])
-            games_time.append(game['playtime_forever'])
-        games = {"Game_name":games_name, "Played_time_hours":games_time}
+            games_name.append(game[columns.STEAM_NAME])
+            games_time.append(game[columns.STEAM_TIME_PLAYED])
+        games = {columns.DF_PERSONAL[0]:games_name, columns.DF_PERSONAL[1]:games_time}
         df_games = pd.DataFrame(games)
-        df_games["Played_time_hours"] = df_games["Played_time_hours"].apply(
+        df_games[columns.DF_PERSONAL[1]] = df_games[columns.DF_PERSONAL[1]].apply(
                                                                         lambda x:round(int(x)/60,2) 
                                                                         if str(x).isdigit() else x)
-        df_games = df_games.sort_values("Played_time_hours", ascending=False).reset_index(drop=True)
-        logging.info(f"Successfully retrieved information")
+        df_games = df_games.sort_values(columns.DF_PERSONAL[1], ascending=False).reset_index(drop=True)
         return df_games
