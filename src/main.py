@@ -14,28 +14,22 @@ try:
         quit()
 except:
     pass
+
 # Generate all URLS
-urls = []
-for i in range(len(users)):
-    key = users.iloc[i][0]
-    user = users.iloc[i][1]
-    urls.append(steam.do_url(API_KEY=key, USER_ID=user))
-# Get responses 
-games_data = []
-for url in urls:
-    games_data.append(steam.get_response(url))
-# Format responses
 df_games = []
-for game in games_data:
-    df_games.append(steam.format_response(game))
+for i in range(len(users)):
+    user_name = users.iloc[i][2]
+    url = steam.do_url(API_KEY=users.iloc[i][0], USER_ID=users.iloc[i][1])
+    games_data = steam.get_response(url, user_name)
+    df_games.append(steam.format_response(games_data, user_name))
+    i += 1
 
 df_concat = steam.concat_df(df_games)
 
-df_counts = df_concat[columns.DF_PERSONAL[0]].value_counts().reset_index()
-df_counts.columns = columns.DF_SHARED
-df_counts = df_counts.sort_values(columns.DF_SHARED[1], ascending=False)
+df_friends = steam.shared_friends(df_concat)
+df_friends_price = steam.price_response(df_friends)
 
 steam.export_file(df_concat, "_GamesandHours_")
-steam.export_file(df_counts, "_GamesCounts_")
+steam.export_file(df_friends_price, "_SharedandPrice_")
 
 logging.info(f"\nRun time: {round(time.time() - start_time, 2)} seconds")
