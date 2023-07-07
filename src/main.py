@@ -27,9 +27,9 @@ for i in range(len(users)):
 df_concat = steam.concat_df(df_games)
 df_concat = df_concat.sort_values(columns.DF_PERSONAL, ascending=[True, False]).reset_index(drop=True)
 df_friends = steam.shared_friends(df_concat)
-#df_friends_price = steam.price_response(df_friends)
+df_friends_price = steam.price_response(df_friends)
 
 steam.export_file(df_concat, "Games_PlayedTime")
-#steam.export_file(df_friends_price, "Friends_Price")
+steam.export_file(df_friends_price, "Friends_Price")
 
 logging.info(f"\nRun time: {round(time.time() - start_time, 2)} seconds")
