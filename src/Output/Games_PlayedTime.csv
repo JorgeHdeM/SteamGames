@@ -1,22 +1,22 @@
 GAME_NAME,TIME_PLAYED_HOURS,FRIEND_OWNS,GAME_ID
 ARK: Survival Evolved,0.08,Forflais,346110
 ARK: Survival Of The Fittest,0.0,Forflais,407530
-Age of Empires II: Definitive Edition,16.02,Ekeki,813780
-Age of Empires II: Definitive Edition,27.15,Forflais,813780
 Age of Empires II: Definitive Edition,87.1,Adolf,813780
+Age of Empires II: Definitive Edition,27.15,Forflais,813780
+Age of Empires II: Definitive Edition,16.02,Ekeki,813780
 Age of Mythology: Extended Edition,45.12,Forflais,266840
 Age of Mythology: Extended Edition,16.22,Adolf,266840
-Aimlabs,0.33,Adolf,714010
 Aimlabs,14.2,Forflais,714010
 Aimlabs,3.0,Peafiel,714010
-American Truck Simulator,22.48,Forflais,270880
-American Truck Simulator,24.2,Adolf,270880
+Aimlabs,0.33,Adolf,714010
 American Truck Simulator,44.93,Ekeki,270880
+American Truck Simulator,24.2,Adolf,270880
+American Truck Simulator,22.48,Forflais,270880
 American Truck Simulator,15.45,Peafiel,270880
-Among Us,4.68,Peafiel,945360
 Among Us,19.4,Forflais,945360
 Among Us,6.13,Adolf,945360
 Among Us,5.93,Ekeki,945360
+Among Us,4.68,Peafiel,945360
 Apex Legends,0.0,Forflais,1172470
 Batman: Arkham Asylum GOTY Edition,12.93,Adolf,35140
 Batman: Arkham City GOTY,0.0,Adolf,200260
@@ -24,19 +24,19 @@ Ben and Ed,0.18,Forflais,395200
 Ben and Ed - Blood Party,0.0,Forflais,500260
 Borderlands 2,2.2,Adolf,49520
 Borderlands 2,0.0,Forflais,49520
-Brawlhalla,9.0,Ekeki,291550
-Brawlhalla,18.88,Forflais,291550
 Brawlhalla,34.78,Adolf,291550
+Brawlhalla,18.88,Forflais,291550
 Brawlhalla,18.13,Peafiel,291550
+Brawlhalla,9.0,Ekeki,291550
 Broforce,0.48,Adolf,274190
 Call of Duty®: Modern Warfare® II | Warzone™,117.03,Peafiel,1938090
 Call of Duty®: Modern Warfare® II | Warzone™,60.08,Ekeki,1938090
 Clustertruck,0.03,Adolf,397950
 Contraband Police,1.58,Ekeki,756800
 Counter-Strike: Global Offensive,230.97,Peafiel,730
-Counter-Strike: Global Offensive,1.02,Adolf,730
 Counter-Strike: Global Offensive,16.0,Forflais,730
 Counter-Strike: Global Offensive,3.03,Ekeki,730
+Counter-Strike: Global Offensive,1.02,Adolf,730
 Cry of Fear,0.3,Forflais,223710
 Cube Escape: Paradox,1.87,Forflais,909080
 DEVOUR,0.02,Forflais,1274570
@@ -47,16 +47,16 @@ Destiny 2,0.0,Peafiel,1085660
 Destiny 2,0.0,Ekeki,1085660
 Divinity: Original Sin 2,50.02,Forflais,435150
 Divinity: Original Sin 2,0.0,Adolf,435150
-EA SPORTS™ FIFA 23,34.2,Adolf,1811260
-EA SPORTS™ FIFA 23,8.45,Forflais,1811260
-EA SPORTS™ FIFA 23,87.92,Ekeki,1811260
+EA SPORTS™ FIFA 23,88.83,Ekeki,1811260
 EA SPORTS™ FIFA 23,71.9,Peafiel,1811260
+EA SPORTS™ FIFA 23,35.18,Adolf,1811260
+EA SPORTS™ FIFA 23,8.45,Forflais,1811260
 EVE Online,0.33,Forflais,8500
 Electrician Simulator - First Shock,0.08,Ekeki,1781160
 Escape Room - The Sick Colleague,0.02,Forflais,1301720
 Euro Truck Simulator 2,0.0,Adolf,227300
-Fall Guys,4.48,Adolf,1097150
 Fall Guys,21.78,Forflais,1097150
+Fall Guys,4.48,Adolf,1097150
 Food Truck Simulator,1.07,Ekeki,1160920
 Football Manager 2017,64.22,Peafiel,482730
 Football Manager 2022,69.92,Peafiel,1569040
@@ -76,58 +76,58 @@ Grand Theft Auto: San Andreas,0.0,Adolf,12250
 Grand Theft Auto: Vice City,6.0,Adolf,12110
 Grand Theft Auto: Vice City,0.0,Adolf,12240
 Hero Siege,0.58,Adolf,269210
-Hero Siege,0.15,Peafiel,269210
 Hero Siege,0.28,Forflais,269210
+Hero Siege,0.15,Peafiel,269210
 Hogwarts Legacy,22.97,Forflais,990080
 Hollow Knight,1.37,Adolf,367520
-Human: Fall Flat,6.3,Peafiel,477160
 Human: Fall Flat,10.27,Forflais,477160
+Human: Fall Flat,6.3,Peafiel,477160
 Human: Fall Flat,3.13,Adolf,477160
 It Takes Two,0.0,Adolf,1426210
 Just Act Natural,1.42,Forflais,1485080
-Keep Talking and Nobody Explodes,0.0,Ekeki,341800
-Keep Talking and Nobody Explodes,2.85,Adolf,341800
 Keep Talking and Nobody Explodes,5.67,Peafiel,341800
 Keep Talking and Nobody Explodes,2.85,Forflais,341800
+Keep Talking and Nobody Explodes,2.85,Adolf,341800
+Keep Talking and Nobody Explodes,0.0,Ekeki,341800
 LEGO® Star Wars™: The Complete Saga,1.1,Ekeki,32440
-Left 4 Dead 2,1.67,Adolf,550
 Left 4 Dead 2,24.73,Peafiel,550
 Left 4 Dead 2,9.27,Forflais,550
 Left 4 Dead 2,1.77,Ekeki,550
+Left 4 Dead 2,1.67,Adolf,550
 Life is Strange™,1.3,Forflais,319630
-Lost Ark,3.13,Forflais,1599340
 Lost Ark,5.68,Adolf,1599340
+Lost Ark,3.13,Forflais,1599340
 Marvel's Avengers - The Definitive Edition,18.15,Adolf,997070
 Move or Die,0.35,Forflais,323850
 MultiVersus,0.0,Forflais,1818750
 Need for Speed™ Heat ,23.6,Adolf,1222680
 Outlast 2,1.03,Forflais,414700
-PC Building Simulator,0.17,Ekeki,621060
 PC Building Simulator,7.62,Adolf,621060
+PC Building Simulator,0.17,Ekeki,621060
 PUBG: BATTLEGROUNDS,10.55,Peafiel,578080
-Pacify,0.33,Ekeki,967050
-Pacify,3.28,Peafiel,967050
 Pacify,7.13,Forflais,967050
+Pacify,3.28,Peafiel,967050
 Pacify,1.08,Adolf,967050
+Pacify,0.33,Ekeki,967050
 Phasmophobia,35.45,Forflais,739630
-Phasmophobia,11.72,Ekeki,739630
 Phasmophobia,14.32,Peafiel,739630
+Phasmophobia,11.72,Ekeki,739630
 Phasmophobia,6.55,Adolf,739630
+Pro Soccer Online,2.28,Peafiel,1583320
 Pro Soccer Online,1.2,Ekeki,1583320
 Pro Soccer Online,0.32,Adolf,1583320
-Pro Soccer Online,2.28,Peafiel,1583320
 Project CARS,0.23,Adolf,234630
 Pummel Party,10.02,Forflais,880940
-RISK: Global Domination,11.18,Adolf,1128810
-RISK: Global Domination,0.0,Peafiel,1128810
 RISK: Global Domination,14.18,Forflais,1128810
+RISK: Global Domination,11.18,Adolf,1128810
 RISK: Global Domination,4.25,Ekeki,1128810
+RISK: Global Domination,0.0,Peafiel,1128810
+Raft,2.2,Forflais,648800
 Raft,0.65,Peafiel,648800
 Raft,0.63,Ekeki,648800
-Raft,2.2,Forflais,648800
 RuneScape,0.0,Forflais,1343400
-SMITE,0.0,Forflais,386360
 SMITE,0.0,Adolf,386360
+SMITE,0.0,Forflais,386360
 SMITE - Public Test,0.0,Adolf,858460
 SMITE - Public Test,0.0,Forflais,858460
 STAR WARS Jedi: Fallen Order™ ,36.42,Adolf,1172380
@@ -146,8 +146,8 @@ South Park™: The Stick of Truth™,62.53,Adolf,213670
 "Star Wars: Battlefront 2 (Classic, 2005)",2.92,Adolf,6060
 Tabletop Simulator,3.08,Forflais,286160
 Tales of Escape,0.95,Forflais,587860
-The Forest,3.6,Adolf,242760
 The Forest,23.4,Forflais,242760
+The Forest,3.6,Adolf,242760
 Tom Clancy's Rainbow Six Siege,0.0,Forflais,359550
 Tom Clancy's Rainbow Six Siege - Test Server,0.0,Forflais,623990
 Valheim,27.08,Forflais,892970

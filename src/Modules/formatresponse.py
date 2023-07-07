@@ -23,5 +23,5 @@ class FormatResponse:
         df_games[columns.DF_PERSONAL[1]] = df_games[columns.DF_PERSONAL[1]].apply(
                                                                         lambda x:round(int(x)/60,2) 
                                                                         if str(x).isdigit() else x)
-        df_games = df_games.sort_values(columns.DF_PERSONAL[1], ascending=False).reset_index(drop=True)
+        df_games = df_games.sort_values(columns.DF_PERSONAL, ascending=[True, False]).reset_index(drop=True)
         return df_games

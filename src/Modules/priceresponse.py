@@ -5,7 +5,7 @@ import time
 class PriceResponse:
     def __init__(self):
         logging.info("\n########## Getting URL info ##########")
-    
+        self.free_games = []
     def get_response_price(self, game_id, country):
         try:
             url = f"http://store.steampowered.com/api/appdetails?appids={game_id}&cc={country}"
@@ -20,6 +20,7 @@ class PriceResponse:
             else:
                 return price
         except:
-            logging.error(f"FREE GAME - {game_id}")
+            self.free_games.append(game_id)
+            logging.error(f"FREE GAMES FOUND - {len(self.free_games)}")
             time.sleep(1)
             return "FREE GAME"
