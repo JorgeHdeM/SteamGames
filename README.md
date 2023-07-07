@@ -19,6 +19,7 @@ gitclone https://github.com/JorgeHdeM/SteamGames.git
 ![alt text](https://github.com/JorgeHdeM/SteamGames/blob/develop/src/assets/SteamProfile2.png)
   
 4. Copy **ApiKey**, **UserID** and **UserName** to the *users.csv* file
+    - You can populate same ApiKey for all users
 
 ## Output
 After running **main.py** and a little formatting:
