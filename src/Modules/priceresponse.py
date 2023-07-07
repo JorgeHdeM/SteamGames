@@ -12,8 +12,13 @@ class PriceResponse:
             url_response = requests.get(url)
             game_info = url_response.json()
             price = game_info[list(game_info.keys())[0]]["data"]["price_overview"]["final_formatted"]
+            mx_string = "Mex$ "
             time.sleep(1)
-            return price
+            if mx_string in price:
+                price = price.replace(mx_string, "$")
+                return price
+            else:
+                return price
         except:
             logging.error(f"FREE GAME - {game_id}")
             time.sleep(1)
