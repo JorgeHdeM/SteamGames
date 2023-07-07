@@ -29,7 +29,7 @@ df_concat = steam.concat_df(df_games)
 df_friends = steam.shared_friends(df_concat)
 df_friends_price = steam.price_response(df_friends)
 
-steam.export_file(df_concat, "_GamesandHours_")
-steam.export_file(df_friends_price, "_SharedandPrice_")
+steam.export_file(df_concat, "Games_PlayedTime")
+steam.export_file(df_friends_price, "Friends_Price")
 
 logging.info(f"\nRun time: {round(time.time() - start_time, 2)} seconds")

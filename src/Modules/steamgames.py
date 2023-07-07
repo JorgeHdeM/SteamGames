@@ -33,15 +33,15 @@ class SteamGames:
     
     def concat_df(self, dfs):
         self.df_concat = pd.concat(dfs)
-        self.df_concat["TIME_PLAYED_HOURS"] = self.df_concat["TIME_PLAYED_HOURS"].astype(float)
-        self.df_concat = (self.df_concat.sort_values("GAME_NAME", ascending=True)
+        self.df_concat[self.columns.DF_PERSONAL[1]] = self.df_concat[self.columns.DF_PERSONAL[1]].astype(float)
+        self.df_concat = (self.df_concat.sort_values(self.columns.DF_PERSONAL[0], ascending=True)
                                                                             .reset_index(drop=True))
         return self.df_concat
     
     def shared_friends(self, df_concat):
         df_concat = df_concat.drop(columns=df_concat.columns[1:3])
-        df_concat["FRIENDS_SHARED"] = df_concat.groupby("GAME_NAME")["GAME_NAME"].transform('count')
-        df_concat = df_concat.sort_values(by=["FRIENDS_SHARED", "GAME_NAME"], ascending=[False, True]).reset_index(drop=True)
+        df_concat[self.columns.DF_SHARED[1]] = df_concat.groupby(self.columns.DF_SHARED[0])[self.columns.DF_SHARED[0]].transform('count')
+        df_concat = df_concat.sort_values(by=[self.columns.DF_SHARED[1], self.columns.DF_SHARED[0]], ascending=[False, True]).reset_index(drop=True)
         df_concat = df_concat.drop_duplicates(keep="first")
         return df_concat
     
@@ -49,10 +49,10 @@ class SteamGames:
         price = PriceResponse()
         countries = Countries
         df_price = df
-        df_price["GAME_ID"] = df_price["GAME_ID"].apply(lambda x:str(x).strip())
-        df_price["GAME_ID"] = df_price["GAME_ID"].apply(lambda x:int(x))
+        df_price[self.columns.DF_GAME_ID] = df_price[self.columns.DF_GAME_ID].apply(lambda x:str(x).strip())
+        df_price[self.columns.DF_GAME_ID] = df_price[self.columns.DF_GAME_ID].apply(lambda x:int(x))
         for country in countries._member_names_:
-            df_price[f"PRICE_{country}"] = df_price["GAME_ID"].apply(lambda x:price.get_response_price(x, country))
+            df_price[f"PRICE_{country}"] = df_price[self.columns.DF_GAME_ID].apply(lambda x:price.get_response_price(x, country))
         return df_price
 
     def export_file(self, df, name):
