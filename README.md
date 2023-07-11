@@ -1,6 +1,7 @@
 # SteamGames
 ## Description
-This project compares your owned games with friends' ones in order to decide faster which game to play  
+This project compares your owned games with friends' ones in order to decide faster which game to play or buy displaying prices
+If you want to add different countries to the file, modify: *Modules/countries*
 Generated files in \Output:  
 - Games_PlayedTime - CSV file containing GameName and PlayedTime
 - Friends_Price - CSV file containing GameName, GameID, FriendsOwnedGame, PriceMX, PriceUS
