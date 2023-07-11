@@ -25,6 +25,7 @@ gitclone https://github.com/JorgeHdeM/SteamGames.git
   
 4. Copy **ApiKey**, **UserID** and **UserName** to the *users.csv* file
     - You can populate same ApiKey for all users
+    - **Highly recommended to use personal API_KEY for each user to avoid call errors**
 
 ## Output
 After running **main.py** and a little formatting:
