@@ -29,7 +29,10 @@ df_concat = df_concat.sort_values(columns.DF_PERSONAL, ascending=[True, False]).
 df_friends = steam.shared_friends(df_concat)
 df_friends_price = steam.price_response(df_friends)
 
+free_games = df_friends_price["PRICE_MX"].value_counts()["FREE GAME"]
+logging.info(f"\nFree games found: {free_games}")
+
 steam.export_file(df_concat, "Games_PlayedTime")
 steam.export_file(df_friends_price, "Friends_Price")
 
-logging.info(f"\nRun time: {round(time.time() - start_time, 2)} seconds")
+logging.info(f"Run time: {round(time.time() - start_time, 2)} seconds")
