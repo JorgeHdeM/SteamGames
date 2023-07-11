@@ -36,7 +36,7 @@ After running **main.py** and a little formatting:
     - SHARED_FRIENDS refers to the friends owning the specific game
 ![alt text](https://github.com/JorgeHdeM/SteamGames/blob/develop/src/assets/Games_Price_Demo.png)
 
-### Notes
+### IMPORTANT
 FREE_GAMES can be false positives since the game's name is different, for example:  
 API game name: *Grand Theft Auto V*  
 Real Steam name: *Grand Theft Auto V: Premium Edition*
