@@ -31,7 +31,8 @@ After running **main.py** and a little formatting:
 1. Games_PlayedTime  
 ![alt text](https://github.com/JorgeHdeM/SteamGames/blob/develop/src/assets/Games_PlayedTime_Demo.png)
 
-2. Friends_Price  
+2. Friends_Price
+    - SHARED_FRIENDS refers to the friends owning the specific game
 ![alt text](https://github.com/JorgeHdeM/SteamGames/blob/develop/src/assets/Games_Price_Demo.png)
 
 ### Notes
