@@ -4,7 +4,11 @@ This project compares your owned games with friends' ones in order to decide fas
 Generated files in \Output:  
 - Games_PlayedTime - CSV file containing GameName and PlayedTime
 - Friends_Price - CSV file containing GameName, GameID, FriendsOwnedGame, PriceMX, PriceUS
-
+## Pre-requisites
+1. Install Python
+```bash
+pip install pandas
+```
 ## Installation
 ```bash
 gitclone https://github.com/JorgeHdeM/SteamGames.git
