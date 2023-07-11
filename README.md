@@ -6,6 +6,7 @@ Generated files in \Output:
 - Friends_Price - CSV file containing GameName, GameID, FriendsOwnedGame, PriceMX, PriceUS
 ## Pre-requisites
 1. Install Python
+2. Install pandas library
 ```bash
 pip install pandas
 ```
