@@ -1,6 +1,7 @@
 import requests
 import logging
 
+
 class UrlResponse:
     def __init__(self):
         logging.info("\n########## Getting URL info ##########")

@@ -2,7 +2,10 @@ import time
 import logging
 from Modules.steamgames import SteamGames
 from constants.columns import ColumnsGames
+from dotenv import load_dotenv
 
+
+load_dotenv()
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 start_time = time.time()
 columns = ColumnsGames()

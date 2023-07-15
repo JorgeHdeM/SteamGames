@@ -9,6 +9,7 @@ from constants.columns import ColumnsGames
 from Modules.priceresponse import PriceResponse
 from Modules.countries import Countries
 
+
 class SteamGames:
     def __init__(self):
         file = FileHelper()
